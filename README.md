@@ -1,5 +1,5 @@
 # Investment Research Twitter Scraper
-
+### (This version of selenium has since depreciated and Twitter - now "X" - has disbaled scraping capabilties)
 ## Description
 
 The Investment Research Twitter Scraper is a Python-based tool that leverages the Selenium WebDriver to automate the process of scraping Twitter for stock sentiment analysis. It is designed to assist investors and researchers by providing real-time sentiment data on various stocks.
