@@ -43,10 +43,7 @@ def generate_tweet_id(tweet):
 
 
 def scroll_down_page(driver, last_position, num_seconds_to_load=0.5, scroll_attempt=0, max_attempts=5):
-    """The function will try to scroll down the page and will check the current
-    and last positions as an indicator. If the current and last positions are the same after `max_attempts`
-    the assumption is that the end of the scroll region has been reached and the `end_of_scroll_region`
-    flag will be returned as `True`"""
+    
     end_of_scroll_region = False
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     sleep(num_seconds_to_load)
@@ -71,11 +68,7 @@ def save_tweet_data_to_csv(records, filepath, mode='a+'):
 
 
 def collect_all_tweets_from_current_view(driver, lookback_limit=25):
-    """The page is continously loaded, so as you scroll down the number of tweets returned by this function will
-     continue to grow. To limit the risk of 're-processing' the same tweet over and over again, you can set the
-     `lookback_limit` to only process the last `x` number of tweets extracted from the page in each iteration.
-     You may need to play around with this number to get something that works for you. I've set the default
-     based on my computer settings and internet speed, etc..."""
+    
     page_cards = driver.find_elements_by_xpath('//article[@data-testid="tweet"]')
     if len(page_cards) <= lookback_limit:
         return page_cards
@@ -95,12 +88,6 @@ def extract_data_from_current_tweet_card(card):
     except exceptions.NoSuchElementException:
         handle = ""
     try:
-        """
-        If there is no post date here, there it is usually sponsored content, or some
-        other form of content where post dates do not apply. You can set a default value
-        for the postdate on Exception if you which to keep this record. By default I am
-        excluding these.
-        """
         postdate = card.find_element_by_xpath('.//time').get_attribute('datetime')
     except exceptions.NoSuchElementException:
         return
