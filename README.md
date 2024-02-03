@@ -9,8 +9,8 @@ This project is a Python-based tool that scrapes Twitter for tweets about a give
 -Relays overall sentiment for a specificied stock symbol<br>
 
 ### Prerequisites:
-Python3
-Microsoft Edge browser
+Python3<br>
+Microsoft Edge browser<br>
 Microsoft Edge WebDriver (Has to match the browser version).
 
 ### Installation:
