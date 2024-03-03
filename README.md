@@ -1,6 +1,6 @@
 # Twitter Sentiment Analysis for Stocks
 
-This project is a Python-based tool that scrapes Twitter for tweets about a given stock symbol, using Selenium WebDriver with Microsoft Edge, and performs sentiment analysis on the collected tweets using TextBlob. This can be useful for gauging public sentiment towards specific stocks. (*The use of Selenium for scraping in this program is now outdated and Twitter has recently implemented safegaurds against this scraping technique*). This program can also be adjusted for your specific need.
+Scrapes Twitter for tweets about a given stock symbol, using Selenium WebDriver with Microsoft Edge, and performs sentiment analysis on the collected tweets using TextBlob. This can be useful for gauging public sentiment towards specific stocks. (*The use of Selenium for scraping in this program is now outdated and Twitter has recently implemented safegaurds against this scraping technique*). This program can also be adjusted for your specific need.
 
 ### Features:
 -Twitter scraping using Selenium WebDriver<br>
