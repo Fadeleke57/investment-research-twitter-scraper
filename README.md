@@ -8,7 +8,7 @@ Scrapes Twitter for tweets about a given stock symbol, using Selenium WebDriver 
 -Support for Microsoft Edge browser via msedge.selenium_tools<br>
 -Relays overall sentiment for a specificied stock symbol<br>
 
-### Prerequisites:
+Make sure you have..
 Python3<br>
 Microsoft Edge browser<br>
 Microsoft Edge WebDriver (Has to match the browser version).
