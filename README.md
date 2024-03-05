@@ -1,6 +1,6 @@
 # Twitter Sentiment Analysis for Stocks
 
-Scrapes Twitter for tweets about a given stock symbol, using Selenium WebDriver with Microsoft Edge, and performs sentiment analysis on the collected tweets using TextBlob. This can be useful for gauging public sentiment towards specific stocks. (*The use of Selenium for scraping in this program is now outdated and Twitter has recently implemented safegaurds against this scraping technique*). This program can also be adjusted for your specific need.
+Scrapes Twitter for tweets about a given stock symbol, using Selenium WebDriver with Microsoft Edge, and performs sentiment analysis on the collected tweets using TextBlob. This can be useful for gauging public sentiment towards specific stocks or you can shift to your own use-case. (*The method and release of selenium for scraping in this program is now outdated and Twitter has recently used safegaurds against this scraping technique*).
 
 ### Features:
 -Twitter scraping using Selenium WebDriver<br>
